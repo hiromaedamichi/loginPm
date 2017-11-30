@@ -23,19 +23,18 @@
 		   letter-spacing:1px;
 		   font-family:Verdana, Helvetica, sans-serif;
 		   font-size:16px;
+		   background-color:#43c0f6;
 		   color:#43c0f6;
-		   backgroud-color:white;
- 		   background:url(image/uyuni2.jpg) no-repeat ;
- 		   background-size:cover;
+
 		}
 		.header {
 		   width: 100%;
 		   height: 100px;
 		   background-color:#43c0f6;
-		   margin-top:-40px;
+		   margin-top:-20px;
 		}
 		.top {
-		   font-size:40px;
+		   font-size:35px;
 		   text-align:center;
 		    color:white;
 		    font-weight:bold;
@@ -48,20 +47,25 @@
 			height:200px;
 			border:solid 1px #43c0f6;
 			margin:30px auto 0px;
+			background-color:white;
+			border:solid 2px #43c0f6;
+			text-align:left;
+			font-size:15px;
+			border-collapse: collapse;
+			table-layout: auto;
 		}
 		.main {
-		   width: 100%;
-		   height: 600px;
+		   width: 95%;
+		   height: 700px;
 		   text-align: center;
+		    background:url(image/balloons.jpg) no-repeat center scroll;
+		 background-size:cover;
+		 margin:3px auto 0px;
+		 border:white solid 10px;
 		}
-		.s{
-		   width:25px;
-		   height:25px;
-		}
-
 		.footer {
 			width: 100%;
-			height: 80px;
+			height: 60px;
 			background-color:#43c0f6;
 			clear:both;
 		}
@@ -76,6 +80,54 @@
 		    text-align:center;
 		    color:white;
 		}
+
+			.cube{
+			background-color:white;
+			color:black;
+			font-size:14px;
+}
+.cube:hover{
+ 			background-color:#ffa347;
+		}
+.rightline{
+background-color:white;
+border-right: solid 1px #43c0f6;
+text-align:center;
+width:120px;
+}
+.tableborder{
+
+border-bottom: solid 1px #43c0f6;
+}
+.leftline{
+padding-left:10px;
+}
+
+.sbox{
+       height:25px;
+       width:35px;
+}
+
+.btn{
+               font-size:12px;
+		      font-weight:bold;
+		      background-color:red;
+		      color:white;
+		       padding: 8px 20px;
+		       border-style: none;
+		       moz-border-radius: 25px;
+		     webkit-border-radius: 25px;
+		       border-radius: 25px;
+		       width:120px;
+				margin:0px auto;
+				clear:both;
+        }
+
+        .btn:hover{
+                 background-color:blue;
+                 color:white;
+                 font-size:12px;
+}
 	</style>
 </head>
 <body>
@@ -88,26 +140,30 @@
 	<div class="main">
 
 		<div class="h3">
-			<h3>IDとPASSWORDを入力してください。</h3>
+			<p>IDとPASSWORDを入力してください。</hp>
 			</div>
 			<s:form action="LoginAction">
 			<s:if test="missmatch!=''">
      <s:property value="missmatch" escape="false" />
      </s:if>
+
 				<table class="table1">
-				<tr>
-				<td>ID</td><td><input type="text" name="login_id" value="<s:property value="save_visitor"/>"  /></td>
+				<tr class="tableborder">
+				<td class="rightline"><label>ID</label></td>
+				<td class="leftline"><input type="text" name="login_id"  size="35" maxlength="16" class="cube" value="<s:property value="save_visitor"/>"  /></td>
 				</tr>
-				<tr>
-				<td>パスワード</td><td><input type="password" name="login_pass" value=""/></td>
+				<tr class="tableborder">
+				<td class="rightline"><label>パスワード</label></td>
+				<td class="leftline" ><input type="password" name="login_pass" size="35" maxlength="16" class="cube"value=""/></td>
 				</tr>
 
-				<tr>
-				<td>保存<input type="checkbox" name="save" value=true  class="s" /></td>
-				<td><input type="submit" value="enter"/></td>
+				<tr class="tableborder">
+				<td class="rightline"><label>保存</label></td>
+				<td class="leftline" ><input type="checkbox" name="save" value=true size="20" class="sbox" /></td>
+
 				</tr>
 				</table>
-
+				<input type="submit" value="enter" class="btn"/>
 			</s:form>
 			<br/>
 			<div class="link">

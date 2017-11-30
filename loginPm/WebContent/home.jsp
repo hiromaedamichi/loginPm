@@ -19,8 +19,8 @@
     $('.slider').bxSlider({
     	auto :true,
     	mode :'fade',
-    	speed : 1000,
-    	slideWidth : 480
+    	speed : 800,
+    	slideWidth : 600
     });
   });
   </script>
@@ -34,8 +34,9 @@
 		   font-family:Verdana, Helvetica, sans-serif;
 		   font-size:16px;
 		   color:#43c0f6;
-	   background:url(image/balloons.jpg) no-repeat center scroll;
-	   background-size:cover;
+		   background-color:#43c0f6;
+
+
 		}
 		.header {
 		   width: 100%;
@@ -65,38 +66,77 @@
 
 
 		.main {
-		   width: 100%;
-		   height: 600px;
+		   width: 95%;
+		   height: 700px;
 		   text-align:center;
+		   background:url(image/balloons.jpg) no-repeat center scroll;
+		 background-size:cover;
+		 margin:5px auto 3px;
+		 border:white solid 15px;
+
+
+
 		}
+
 
 		.logo{
 		     text-align:center;
-		     color:#43c0f6;
+		     color:white;
 		}
 
 		.box{
-		margin-left:35%;
-		margin-right:35%;
+		margin-left:34%;
+		margin-right:32%;
 
 		}
 
 		.slider{
-		width:450px;
+		width:550px;
 		height:400px;
 		background-color:;
 		}
 
 		img{
 		margin:0 auto;
-		width:350px;
+		width:450px;
 		height:300px;
 		}
 
 		.btn{
-		    margin:150px auto 0px;
 
-		}
+    width:20%;
+	height:40px;
+	margin:0px auto 0px;
+	}
+.bt {
+    width: 105px;
+	height: 103px;
+	background:#ff008c;
+	border: 3px solid #7fff00;
+	border-radius: 88px;
+	moz-border-radius: 88px;
+	webkit-border-radius: 88px;
+	color:#7fff00;
+	padding: 37px 29px 35px;
+    text-align: center;
+      font-weight:bold;
+	font-size: 120%;
+	transition: background-color 0.5s ease-in;
+	webkit-transition: background-color 0.5s ease-in;
+	font-style: italic;
+}
+.bt:hover{
+			background: #ffdc00;
+	        color:#00a1e9;
+	        border: 3px solid #00a1e9;
+	        font-style: italic;
+}
+        .tableborder_right{
+background-color:#b0e0e6;
+border-right: double 5px #0000ff;
+width:200px;
+}
+
 
 		.footer {
 			width: 100%;
@@ -125,6 +165,7 @@
 		 <h1>WINGS</h1>
 		</div>
 
+
 		<div class="box">
 		<div class="slider">
 		<div><img src ="image/newbalance.jpg"></div>
@@ -139,13 +180,14 @@
 		</div>
 
 		<s:form action="LoginPageAction">
-		   <div class="btn"><input type="submit"  name="enter" value="enter"/></div>
+		   <div class="btn"><input type="submit"  name="enter" value="enter" class="bt"/></div>
 		</s:form>
 		 <s:if test="#session.id != null">
 			<p>こちら<a href='<s:url action="LogoutAction" />'>こちら</a></p>
 		</s:if>
 
 	</div>
+
 	<div class="footer">
 	<div class="message">
 	WINGS×FUTURE
