@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- Strutsの詳細設定 -->
+<struts>
+<constant value="true" name="struts.devMode"/>
+<!-- 対象のpackageを設定 -->
+
+<package name="com.internousdev.loginP.action" extends="struts-default">
+<!-- HomeAction -->
+<action name="HomeAction" method="execute" class="com.internousdev.loginP.action.HomeAction">
+<result name="login">login.jsp</result>
+<result name="success">login.jsp</result>
+</action>
+
+<!-- LoginAction -->
+<action name="LoginAction" method="execute" class="com.internousdev.loginP.action.LoginAction">
+<result name="success">error.jsp</result>
+<result name="error">login.jsp</result>
+</action>
+
+<!-- LoginAction -->
+<action name="LoginPageAction" method="LoginPage" class="com.internousdev.loginP.action.LoginAction">
+<result name="success">login.jsp</result>
+<result name="error">error.jsp</result>
+</action>
+</package>
+</struts>
