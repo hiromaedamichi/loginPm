@@ -111,12 +111,12 @@
 .bt {
     width: 105px;
 	height: 103px;
-	background:#ff008c;
-	border: 3px solid #7fff00;
+	background:white;
+	border: 1px solid black;
 	border-radius: 88px;
 	moz-border-radius: 88px;
 	webkit-border-radius: 88px;
-	color:#7fff00;
+	color:black;
 	padding: 37px 29px 35px;
     text-align: center;
       font-weight:bold;
@@ -126,9 +126,9 @@
 	font-style: italic;
 }
 .bt:hover{
-			background: #ffdc00;
-	        color:#00a1e9;
-	        border: 3px solid #00a1e9;
+			background:#ff8c00;
+	        color:#ffd900;
+	        border: 3px solid #ffd900;
 	        font-style: italic;
 }
         .tableborder_right{

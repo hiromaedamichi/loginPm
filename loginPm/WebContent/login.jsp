@@ -111,8 +111,8 @@ padding-left:10px;
 .btn{
                font-size:12px;
 		      font-weight:bold;
-		      background-color:red;
-		      color:white;
+		      background-color:white;
+		      color:black;
 		       padding: 8px 20px;
 		       border-style: none;
 		       moz-border-radius: 25px;
@@ -121,11 +121,13 @@ padding-left:10px;
 		       width:120px;
 				margin:0px auto;
 				clear:both;
+				border: 1px solid black;
         }
 
         .btn:hover{
-                 background-color:blue;
-                 color:white;
+                 background-color:#ff8c00;
+                 color:#ffd900;
+                 border: 3px solid #ffd900;
                  font-size:12px;
 }
 	</style>
@@ -163,7 +165,7 @@ padding-left:10px;
 
 				</tr>
 				</table>
-				<input type="submit" value="enter" class="btn"/>
+				<input type="submit" value="login" class="btn"/>
 			</s:form>
 			<br/>
 			<div class="link">
